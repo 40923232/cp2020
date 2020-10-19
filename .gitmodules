@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
-
 [submodule "cmsimde"]
 	path = cmsimde
 	url = https://github.com/mdecourse/cmsimde.git
->>>>>>> 7c185594913999d5b9d3a343b18082a5b8ebc49d
+
