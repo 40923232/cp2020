@@ -1,0 +1,244 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>40923232 cp2020</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">40923232 cp2020</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='首頁.html'>首頁</a><li class='has-children'><a href='PC Hardware UNIT4.html'>PC Hardware UNIT4</a><ul class='dropdown'><li class='has-children'><a href='PCH9 Network Overview.html'>PCH9 Network Overview</a><ul class='dropdown'><li><a href='Network Defined by Geography(地理定義的網路).html'>Network Defined by Geography(地理定義的網路)</a><li><a href='Network Defined by Relationships(關係定義的網路).html'>Network Defined by Relationships(關係定義的網路)</a><li><a href='Network Defined by Topology(結構定義的網路).html'>Network Defined by Topology(結構定義的網路)</a></li></ul><li class='has-children'><a href='PCH10 Network Hardware.html'>PCH10 Network Hardware</a><ul class='dropdown'><li><a href='Network Devices(網路裝置).html'>Network Devices(網路裝置)</a><li><a href='Install a Network Adapter(安裝網路適配器).html'>Install a Network Adapter(安裝網路適配器)</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">PCH10 Network Hardware << <a href='PCH10 Network Hardware.html'>Previous</a> <a href='Install a Network Adapter(安裝網路適配器).html'>Next</a> >> Install a Network Adapter(安裝網路適配器)<br /><h1>Network Devices(網路裝置)</h1>
+<p></p>
+<p><em><strong><span style="color: #00ccff;">Overview</span></strong></em></p>
+<p><em><strong><span style="color: #00ccff;"></span></strong></em></p>
+<p><em></em><span style="color: #000000;"><span>Network devices vary according to their purpose. In this module, we will discuss various devices, such as hubs, switches, routers, bridges, network adapters, and media. As we discuss the devices, you should pay attention to their uses, their benefits, and their limitations. We will also explore how to install a network adapter.</span></span></p>
+<p><span style="color: #000000;"></span></p>
+<p><span style="color: #00ccff;"><em><strong>Hub</strong></em></span></p>
+<p><span style="color: #00ccff;"><span style="color: #000000;"></span></span></p>
+<p id="N1069A" lang="">Hubs are among the most simplistic networking devices and are used to connect multiple network devices and workstations to each other, thereby forming a network. Hubs are also known as multiport repeaters. A hub works by accepting a signal in one port and rebroadcasting that same signal out to all of its other ports. Standard hubs do not have any “intelligence” (ability to change in response to varying situations or requirements), so we often refer to them as “dumb hubs.” Hubs can be classified as either active or passive. An active hub repeats the signal it receives on all of its ports and amplifies that signal to full strength. Passive hubs only repeat the signal without adding any amplification. Hubs are an older technology that can be used to easily increase the number of ports available, but this can lead to excessive network errors and collisions. There are newer variants of hubs called smart hubs. Smart hubs are essentially active hubs with enhanced feature sets, such as the use of simple network management protocol (SNMP).</p>
+<p id="N1069D" lang="">Three basic types of Ethernet hubs are as follows:</p>
+<ul lang="">
+<li lang="">Passive hub – repeats signal with no amplification</li>
+<li lang="">Active hub – repeats signal with amplification</li>
+<li lang="">Smart hub – active hub with enhanced features (ex: SNMP)</li>
+</ul>
+<p id="N106AC" lang="">Hubs have no inherent security designed within them because they simply rebroadcast all the information received from one port to every other port. Essentially, hubs rely on the connected workstations to only “listen” to the information on their port if that information is specifically addressed to that workstation. When the information is not addressed to it, the workstation is supposed to simply ignore the data. But a network card can be placed into “promiscuous” mode, where it will listen to all traffic, regardless of which workstation that traffic is addressed to. This makes hubs very insecure.</p>
+<p id="N106AF" lang="">Another drawback of hubs is that they have to share bandwidth, as all devices operate in one collision domain. Therefore, if you have a 100 Mbps hub, but connect four devices to that hub, your devices will effectively be operating at 25 Mbps each. This can lead to huge slowdowns in your network traffic when using a 16-, 24-, or 48-port hub.</p>
+<p lang=""></p>
+<p lang=""><img src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH10/webcontent/PCH10/image1.jpeg"/></p>
+<p lang=""><span>LAN Network Diagram. Copyright:</span></p>
+<p lang=""><span></span></p>
+<p lang=""><span style="color: #00ccff;"><em><strong>Bridges</strong></em></span></p>
+<p lang=""><span style="color: #00ccff;"><span style="color: #000000;"><span>Because hubs operate with all devices acting in a single collision domain, a network device that could break up that collision domain into smaller units is required to help the network operate more efficiently. For example, if a hub is connected to another hub, they both operate under a single </span><a aria-describedby="N106CD" class="extra" id=""></a>collision domain<span><span> </span>. A bridge is used to connect two hubs together, but still keep the hubs’ collision domains separate. This interconnection of multiple network segments together allows networks to scale into large networks without significantly decreasing the performance of that network. Bridges are smarter than hubs; in fact, they actually analyze the source<span> </span></span><a aria-describedby="N106D6" class="extra" id=""></a>media access control (MAC) addresses<span><span> </span>in the frames entering the bridge and populate an internal MAC table based on those addresses. Future routing decisions are based upon those destination MAC addresses. This intelligent forwarding based on the destination MAC address in the frame allows for a decrease in network traffic by only forwarding information to the root hub associated with the network device. Network switches, which we will discuss, are the evolution of hubs and bridges.</span></span></span></p>
+<p lang=""></p>
+<p lang=""><span style="color: #00ccff;"><em><strong>Switches</strong></em></span></p>
+<p><span style="color: #00ccff;"><span style="color: #000000;"></span></span></p>
+<p id="N106E8" lang="">Switches are used to connect multiple network segments together, whether they connect from switch to switch, or switch to workstation. Each port on a switch acts as its own collision domain. A switch is an evolution from a hub and bridge. Essentially, each port on a switch operates as if it were a hub with a bridge connecting the ports of the hub to the workstation, thereby reducing the chance of a collision on the network to zero.</p>
+<p id="N106EB" lang="">Switches are intelligent devices that make forwarding decisions based upon the MAC addresses they learn and place in their MAC tables. A switch analyzes the source MAC addresses in frames as they enter the switch, and then populates the switch’s internal MAC table with the addresses to match them with the switch ports. This allows the switch to forward the frame only to the correct device on a single switch port, thereby increasing security and network speed.</p>
+<p id="N106EE" lang="">If a switch receives a frame but does not have the destination MAC address in its forwarding table, it will flood the frame to all ports except the source to solicit the location of the destination MAC address. Switches break up collision domains but create<span> </span><a aria-describedby="N106F2" class="extra" id=""></a>broadcast domains<span> </span>.</p>
+<p id="N106FA" lang="">Security is increased because only the device to which the information is addressed can receive a copy, regardless of whether the card is in “promiscuous” mode. This is similar in operation to an old-fashioned telephone operator switchboard. If the information isn’t addressed to your port, your port won’t receive the information. Also, because each port is in its own collision domain, the network speed is increased. Regardless of how many devices are on the network, each switch port has full-speed operations, so for a 100 Mbps switch, each device operates at 100 Mbps.</p>
+<p lang=""></p>
+<p lang=""><img src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH10/webcontent/PCH10/image2.png"/></p>
+<p lang=""><span>Network diagram with switch. Image used under CC-BY license from</span></p>
+<p lang=""><span></span></p>
+<p lang=""><span style="color: #00ccff;"><em><strong>Routers</strong></em></span></p>
+<p lang=""><span style="color: #00ccff;"><span style="color: #000000;"></span></span></p>
+<p><span>Routers move data packets (layer 3), as opposed to switches (layer 2), which move frames. Routers separate network segments based on IP addressing and will only forward packets out of the segment when configured to do so. This design breaks up broadcast domains created by switches. It is up to the network professional to configure the router to connect different networks together and perform intelligent routing decisions. A router is most closely associated with a computer in that it has a processor and a sophisticated OS. The router compares the IP address of the source and destination of the packet and forwards traffic to/from a network based on this logical address (IPv4 and IPv6 addresses, for example). Routers are typically feature-rich devices and support a wide range of interface types, including unshielded twisted pair, fiber optic, and coaxial cable connections. Like a switch, each port on a router is a separate collision domain. Using access control lists, routers have the ability to block access to networks based on ports or addresses. This blocking adds to the network’s security.</span></p>
+<p><span></span></p>
+<p><span><img src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH10/webcontent/PCH10/image3.png"/></span></p>
+<p><span>Network diagram with router. Image used under CC-BY license from</span></p>
+<p><span></span></p>
+<p><span style="color: #00ccff;"><em><strong>Netwok <span style="color: #00ccff;">Adapter</span></strong></em></span></p>
+<p></p>
+<p id="N1072F" lang="">The network adapter is used to connect a workstation to the network through the use of media. The network adapter can be built in to the motherboard of the device in several ways:</p>
+<ul lang="">
+<li lang="">Using an integrated port cluster.</li>
+<li lang="">Added to a workstation through the use of an internal expansion card (PCIe, PCI, or mini-PCIe).</li>
+<li lang="">Through the use of an externally connected card, such as USB or PCMCIA.</li>
+</ul>
+<p id="N1073E" lang="">There are two main types of network adapters: wired and wireless. The wired cards support various cable types, such as unshielded twisted pair (UTP), fiber optic, and coaxial cabling. These various cable types are called media.</p>
+<p lang=""></p>
+<p lang=""><span style="color: #00ccff;"><em><strong>Media</strong></em></span></p>
+<p lang=""><span style="color: #00ccff;"><span style="color: #000000;"></span></span></p>
+<p lang=""><span style="color: #00ccff;"><span style="color: #000000;"><span>Media is the term used to categorize the physical connection between two device ports, such as between a computer and a switch. Media is made up of copper cable, fiber-optic cable, or even radio frequency waves (as used in Wi-Fi networks). Media varies greatly in cost, from free for radio waves, to cheap for unshielded twisted pair (copper cable), to expensive for fiber-optic cabling. The type of media determines the bandwidth speed, capacity, and distance limitations for a particular network. We will discuss media in more depth in a future module.</span></span></span></p>
+<p lang=""><span style="color: #00ccff;"><span style="color: #000000;"><span></span></span></span></p>
+<p lang=""><span style="color: #00ccff;"><span style="color: #000000;"><span><img src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH10/webcontent/PCH10/image4.png"/></span></span></span></p>
+<p lang=""><span style="color: #00ccff;"><span style="color: #000000;"><span>Network diagram with arrows pointing to connection media. Image used under CC-BY license from</span></span></span></p>
+<p lang=""></p>
+<br />PCH10 Network Hardware << <a href='PCH10 Network Hardware.html'>Previous</a> <a href='Install a Network Adapter(安裝網路適配器).html'>Next</a> >> Install a Network Adapter(安裝網路適配器)</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
