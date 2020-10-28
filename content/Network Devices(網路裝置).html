@@ -139,6 +139,10 @@ img.add_border {
 <p><em><strong><span style="color: #00ccff;"></span></strong></em></p>
 <p><em></em><span style="color: #000000;"><span>Network devices vary according to their purpose. In this module, we will discuss various devices, such as hubs, switches, routers, bridges, network adapters, and media. As we discuss the devices, you should pay attention to their uses, their benefits, and their limitations. We will also explore how to install a network adapter.</span></span></p>
 <p><span style="color: #000000;"></span></p>
+<p><span style="color: #00ccff;"><strong><em>總覽</em></strong></span></p>
+<p><span style="color: #00ccff;"><span style="color: #000000;"></span></span></p>
+<p><span style="color: #00ccff;"><span style="color: #000000;">網絡設備根據其用途而有所不同。在本模塊中，我們將討論各種設備，例如集線器，交換機，路由器，網橋，網絡適配器和媒體。在討論設備時，您應注意其用途，優點和局限性。我們還將探討如何安裝網絡適配器。</span></span></p>
+<p><span style="color: #00ccff;"><span style="color: #000000;"></span></span></p>
 <p><span style="color: #00ccff;"><em><strong>Hub</strong></em></span></p>
 <p><span style="color: #00ccff;"><span style="color: #000000;"></span></span></p>
 <p id="N1069A" lang="">Hubs are among the most simplistic networking devices and are used to connect multiple network devices and workstations to each other, thereby forming a network. Hubs are also known as multiport repeaters. A hub works by accepting a signal in one port and rebroadcasting that same signal out to all of its other ports. Standard hubs do not have any “intelligence” (ability to change in response to varying situations or requirements), so we often refer to them as “dumb hubs.” Hubs can be classified as either active or passive. An active hub repeats the signal it receives on all of its ports and amplifies that signal to full strength. Passive hubs only repeat the signal without adding any amplification. Hubs are an older technology that can be used to easily increase the number of ports available, but this can lead to excessive network errors and collisions. There are newer variants of hubs called smart hubs. Smart hubs are essentially active hubs with enhanced feature sets, such as the use of simple network management protocol (SNMP).</p>
@@ -151,12 +155,26 @@ img.add_border {
 <p id="N106AC" lang="">Hubs have no inherent security designed within them because they simply rebroadcast all the information received from one port to every other port. Essentially, hubs rely on the connected workstations to only “listen” to the information on their port if that information is specifically addressed to that workstation. When the information is not addressed to it, the workstation is supposed to simply ignore the data. But a network card can be placed into “promiscuous” mode, where it will listen to all traffic, regardless of which workstation that traffic is addressed to. This makes hubs very insecure.</p>
 <p id="N106AF" lang="">Another drawback of hubs is that they have to share bandwidth, as all devices operate in one collision domain. Therefore, if you have a 100 Mbps hub, but connect four devices to that hub, your devices will effectively be operating at 25 Mbps each. This can lead to huge slowdowns in your network traffic when using a 16-, 24-, or 48-port hub.</p>
 <p lang=""></p>
+<p lang=""><span style="color: #00ccff;"><em><strong>樞紐</strong></em><strong></strong></span></p>
+<p lang=""><span style="color: #00ccff;"><span style="color: #000000;"></span></span></p>
+<p>集線器是最簡單的網絡設備之一，用於將多個網絡設備和工作站相互連接，從而形成一個網絡。集線器也稱為多端口中繼器。集線器通過在一個端口中接收信號並將該信號重新廣播到其所有其他端口來工作。標準集線器沒有任何“智能”（能夠根據不同情況或要求進行更改的能力），因此我們通常將它們稱為“啞集線器”。集線器可以分為主動或被動兩種。活動集線器會在其所有端口上重複接收到的信號，並將該信號放大到最大強度。無源集線器僅重複信號而不增加任何放大。集線器是一種較舊的技術，可用於輕鬆增加可用端口的數量，但這會導致過多的網絡錯誤和衝突。集線器有較新的變體，稱為智能集線器。智能集線器實質上是具有增強功能集（例如，使用簡單網絡管理協議（SNMP））的活動集線器。</p>
+<p>以太網集線器的三種基本類型如下：</p>
+<p>無源集線器–重複信號而不放大<br/>有源集線器–重複放大信號<br/>智能集線器–具有增強功能的活動集線器（例如：SNMP）</p>
+<p><br/>集線器內部沒有設計固有的安全性，因為它們只是將從一個端口接收的所有信息重新廣播到另一個端口。本質上，集線器僅依賴於連接的工作站來“偵聽”其端口上的信息（如果該信息專門針對該工作站）。當信息沒有發送給它時，工作站應該只是忽略數據。但是，可以將網卡置於“混雜”模式，在該模式下，網卡將偵聽所有流量，而不管該流量指向哪個工作站。這使集線器非常不安全。</p>
+<p>集線器的另一個缺點是它們必須共享帶寬，因為所有設備都在一個衝突域中運行。因此，如果您有一個100 Mbps的集線器，但將四個設備連接到該集線器，則每個設備將有效地以25 Mbps的速度運行。使用16端口，24端口或48端口集線器時，這可能會導致網絡流量大幅下降。</p>
+<p lang=""></p>
 <p lang=""><img src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH10/webcontent/PCH10/image1.jpeg"/></p>
-<p lang=""><span>LAN Network Diagram. Copyright:</span></p>
+<p lang=""><span>LAN Network Diagram. Copyright: </span><a href="http://www.123rf.com/profile_ohmega1982" id="_i_1" lang="" target="_blank">ohmega 1982/123 RF Stock Photo</a><span>.</span></p>
+<p lang=""><span>LAN網絡圖。版權所有：<a href="http://www.123rf.com/profile_ohmega1982" id="_i_1" lang="" target="_blank">ohmega 1982/123 RF Stock Photo</a></span></p>
 <p lang=""><span></span></p>
 <p lang=""><span style="color: #00ccff;"><em><strong>Bridges</strong></em></span></p>
+<p lang=""><span style="color: #00ccff;"><em><strong></strong></em></span></p>
 <p lang=""><span style="color: #00ccff;"><span style="color: #000000;"><span>Because hubs operate with all devices acting in a single collision domain, a network device that could break up that collision domain into smaller units is required to help the network operate more efficiently. For example, if a hub is connected to another hub, they both operate under a single </span><a aria-describedby="N106CD" class="extra" id=""></a>collision domain<span><span> </span>. A bridge is used to connect two hubs together, but still keep the hubs’ collision domains separate. This interconnection of multiple network segments together allows networks to scale into large networks without significantly decreasing the performance of that network. Bridges are smarter than hubs; in fact, they actually analyze the source<span> </span></span><a aria-describedby="N106D6" class="extra" id=""></a>media access control (MAC) addresses<span><span> </span>in the frames entering the bridge and populate an internal MAC table based on those addresses. Future routing decisions are based upon those destination MAC addresses. This intelligent forwarding based on the destination MAC address in the frame allows for a decrease in network traffic by only forwarding information to the root hub associated with the network device. Network switches, which we will discuss, are the evolution of hubs and bridges.</span></span></span></p>
 <p lang=""></p>
+<p lang=""><span style="color: #00ccff;"><em><strong>橋接器</strong></em><strong></strong></span></p>
+<p lang=""><span style="color: #00ccff;"><span style="color: #000000;"></span></span></p>
+<p lang=""><span style="color: #00ccff;"><span style="color: #000000;">因為集線器與所有在單個衝突域中起作用的設備一起運行，所以需要一個可以將該衝突域分解為較小單元的網絡設備，以幫助網絡更高效地運行。例如，如果一個集線器連接到另一個集線器，則它們都在單個衝突域下運行。橋用於將兩個集線器連接在一起，但仍將集線器的衝突域分開。多個網段的這種互連在一起使網絡可以擴展為大型網絡，而不會顯著降低該網絡的性能。橋比集線器更智能；實際上，他們實際上是分析進入網橋的幀中的源媒體訪問控制（MAC）地址，並根據這些地址填充內部MAC表。未來的路由決策將基於那些目標MAC地址。通過僅將信息轉發到與網絡設備關聯的根集線器，這種基於幀中目標MAC地址的智能轉發可以減少網絡流量。我們將討論的網絡交換機是集線器和網橋的演進。</span></span></p>
+<p lang=""><span style="color: #00ccff;"><span style="color: #000000;"></span></span></p>
 <p lang=""><span style="color: #00ccff;"><em><strong>Switches</strong></em></span></p>
 <p><span style="color: #00ccff;"><span style="color: #000000;"></span></span></p>
 <p id="N106E8" lang="">Switches are used to connect multiple network segments together, whether they connect from switch to switch, or switch to workstation. Each port on a switch acts as its own collision domain. A switch is an evolution from a hub and bridge. Essentially, each port on a switch operates as if it were a hub with a bridge connecting the ports of the hub to the workstation, thereby reducing the chance of a collision on the network to zero.</p>
@@ -164,15 +182,28 @@ img.add_border {
 <p id="N106EE" lang="">If a switch receives a frame but does not have the destination MAC address in its forwarding table, it will flood the frame to all ports except the source to solicit the location of the destination MAC address. Switches break up collision domains but create<span> </span><a aria-describedby="N106F2" class="extra" id=""></a>broadcast domains<span> </span>.</p>
 <p id="N106FA" lang="">Security is increased because only the device to which the information is addressed can receive a copy, regardless of whether the card is in “promiscuous” mode. This is similar in operation to an old-fashioned telephone operator switchboard. If the information isn’t addressed to your port, your port won’t receive the information. Also, because each port is in its own collision domain, the network speed is increased. Regardless of how many devices are on the network, each switch port has full-speed operations, so for a 100 Mbps switch, each device operates at 100 Mbps.</p>
 <p lang=""></p>
+<p lang=""><span style="color: #00ccff;"><em><strong>交換器</strong></em><strong></strong></span></p>
+<p lang=""><span style="color: #00ccff;"><span style="color: #000000;"></span></span></p>
+<p>交換機用於將多個網段連接在一起，無論它們是從交換機到交換機還是從工作站到工作站。交換機上的每個端口都充當其自己的衝突域。交換機是集線器和網橋的演進。本質上，交換機上的每個端口都好像是集線器一樣工作，並具有將集線器的端口連接到工作站的網橋，從而將網絡衝突的可能性降低到零。</p>
+<p>交換機是智能設備，它們根據其學習到的MAC地址並放置在其MAC表中來做出轉發決策。交換機在輸入源MAC地址時會分析它們進入交換機的幀，然後用地址填充交換機的內部MAC表，以使其與交換機端口匹配。這允許交換機僅將幀轉發到單個交換機端口上的正確設備，從而提高安全性和網絡速度。</p>
+<p>如果交換機接收到幀，但在其轉發表中沒有目標MAC地址，則它將將該幀泛洪到除源以外的所有端口上，以請求目標MAC地址的位置。交換器分解衝突域，但創建廣播域。</p>
+<p>安全性提高了，因為無論信息卡是否處於“混雜”模式，只有信息所針對的設備才能收到副本。這在操作上類似於老式的電話接線員總機。如果信息未發送到您的端口，則您的端口將不會收到該信息。另外，由於每個端口都在其自己的衝突域中，因此網絡速度得以提高。無論網絡上有多少設備，每個交換機端口都可以全速運行，因此對於100 Mbps交換機，每個設備都以100 Mbps的速度運行。</p>
+<p></p>
 <p lang=""><img src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH10/webcontent/PCH10/image2.png"/></p>
-<p lang=""><span>Network diagram with switch. Image used under CC-BY license from</span></p>
+<p lang=""><span>Network diagram with switch. Image used under CC-BY license from </span><a href="http://www.jasondion.com/" id="_i_3" lang="" target="_blank">Jason Dion</a><span>.</span></p>
+<p lang=""><span>與交換機的網絡圖。圖片由<a href="http://www.jasondion.com/" id="_i_3" lang="" target="_blank">Jason Dio</a>根據CC-BY許可使用。</span></p>
 <p lang=""><span></span></p>
 <p lang=""><span style="color: #00ccff;"><em><strong>Routers</strong></em></span></p>
 <p lang=""><span style="color: #00ccff;"><span style="color: #000000;"></span></span></p>
 <p><span>Routers move data packets (layer 3), as opposed to switches (layer 2), which move frames. Routers separate network segments based on IP addressing and will only forward packets out of the segment when configured to do so. This design breaks up broadcast domains created by switches. It is up to the network professional to configure the router to connect different networks together and perform intelligent routing decisions. A router is most closely associated with a computer in that it has a processor and a sophisticated OS. The router compares the IP address of the source and destination of the packet and forwards traffic to/from a network based on this logical address (IPv4 and IPv6 addresses, for example). Routers are typically feature-rich devices and support a wide range of interface types, including unshielded twisted pair, fiber optic, and coaxial cable connections. Like a switch, each port on a router is a separate collision domain. Using access control lists, routers have the ability to block access to networks based on ports or addresses. This blocking adds to the network’s security.</span></p>
 <p><span></span></p>
+<p><span style="color: #00ccff;"><strong><em>路由器</em></strong><em></em></span></p>
+<p><span style="color: #00ccff;"><span style="color: #000000;"></span></span></p>
+<p><span style="color: #00ccff;"><span style="color: #000000;">路由器移動數據包（第3層），而交換機移動第2層（幀）。路由器根據IP地址將網段分開，並且僅在配置時將數據包轉發出網段。這種設計可以分解由交換機創建的廣播域。由網絡專業人員決定將路由器配置為將不同的網絡連接在一起並執行智能路由決策。路由器與計算機的關係最為密切，因為它具有處理器和復雜的操作系統。路由器比較數據包源和目標的IP地址，並基於此邏輯地址（例如，IPv4和IPv6地址）將流量轉發到網絡或從網絡轉發流量。路由器通常是功能豐富的設備，並支持多種接口類型，包括非屏蔽雙絞線，光纖和同軸電纜連接。像交換機一樣，路由器上的每個端口都是一個單獨的衝突域。使用訪問控制列表，路由器可以根據端口或地址阻止對網絡的訪問。這種阻止會增加網絡的安全性。</span></span></p>
+<p><span style="color: #00ccff;"><span style="color: #000000;"></span></span></p>
 <p><span><img src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH10/webcontent/PCH10/image3.png"/></span></p>
-<p><span>Network diagram with router. Image used under CC-BY license from</span></p>
+<p><span>Network diagram with router. Image used under CC-BY license from </span><a href="http://www.jasondion.com/" id="_i_5" lang="" target="_blank">Jason Dion</a><span>.</span></p>
+<p><span>與路由器的網絡圖。圖片由<a href="http://www.jasondion.com/" id="_i_5" lang="" target="_blank">Jason Dion</a>根據CC-BY許可使用。</span></p>
 <p><span></span></p>
 <p><span style="color: #00ccff;"><em><strong>Netwok <span style="color: #00ccff;">Adapter</span></strong></em></span></p>
 <p></p>
@@ -184,12 +215,22 @@ img.add_border {
 </ul>
 <p id="N1073E" lang="">There are two main types of network adapters: wired and wireless. The wired cards support various cable types, such as unshielded twisted pair (UTP), fiber optic, and coaxial cabling. These various cable types are called media.</p>
 <p lang=""></p>
+<p lang=""><span style="color: #00ccff;"><em><strong>網絡適配器</strong></em><strong></strong></span></p>
+<p lang=""><span style="color: #00ccff;"><span style="color: #000000;"></span></span></p>
+<p>網絡適配器用於通過使用媒體將工作站連接到網絡。可以通過幾種方式將網絡適配器內置到設備的主板中：</p>
+<p>使用集成端口集群。<br/>通過使用內部擴展卡（PCIe，PCI或mini-PCIe）添加到工作站。<br/>通過使用外部連接的卡，例如USB或PCMCIA。<br/>網絡適配器有兩種主要類型：有線和無線。有線卡支持各種電纜類型，例如非屏蔽雙絞線（UTP），光纖和同軸電纜。這些各種電纜類型稱為媒體。</p>
+<p></p>
 <p lang=""><span style="color: #00ccff;"><em><strong>Media</strong></em></span></p>
 <p lang=""><span style="color: #00ccff;"><span style="color: #000000;"></span></span></p>
 <p lang=""><span style="color: #00ccff;"><span style="color: #000000;"><span>Media is the term used to categorize the physical connection between two device ports, such as between a computer and a switch. Media is made up of copper cable, fiber-optic cable, or even radio frequency waves (as used in Wi-Fi networks). Media varies greatly in cost, from free for radio waves, to cheap for unshielded twisted pair (copper cable), to expensive for fiber-optic cabling. The type of media determines the bandwidth speed, capacity, and distance limitations for a particular network. We will discuss media in more depth in a future module.</span></span></span></p>
 <p lang=""><span style="color: #00ccff;"><span style="color: #000000;"><span></span></span></span></p>
+<p lang=""><span style="color: #00ccff;"><em><strong>傳播媒介</strong></em></span></p>
+<p lang=""><span style="color: #00ccff;"><span style="color: #000000;"></span></span></p>
+<p lang=""><span style="color: #00ccff;"><span style="color: #000000;">媒體是用於對兩個設備端口之間（例如計算機和交換機之間）的物理連接進行分類的術語。介質由銅纜，光纜或什至是射頻波（用於Wi-Fi網絡）組成。介質的成本差異很大，從無線電波的免費成本到非屏蔽雙絞線（銅纜）的價格便宜，再到光纖電纜的價格昂貴。媒體的類型確定特定網絡的帶寬速度，容量和距離限制。我們將在以後的模塊中更深入地討論媒體。</span></span></p>
+<p lang=""><span style="color: #00ccff;"><span style="color: #000000;"></span></span></p>
 <p lang=""><span style="color: #00ccff;"><span style="color: #000000;"><span><img src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH10/webcontent/PCH10/image4.png"/></span></span></span></p>
-<p lang=""><span style="color: #00ccff;"><span style="color: #000000;"><span>Network diagram with arrows pointing to connection media. Image used under CC-BY license from</span></span></span></p>
+<p lang=""><span>Network diagram with arrows pointing to connection media. Image used under CC-BY license from </span><a href="http://www.jasondion.com/" id="_i_7" lang="" target="_blank">Jason Dion</a><span>.</span></p>
+<p lang=""><span>與指向連接媒體的箭頭的網絡圖。圖片由<a href="http://www.jasondion.com/" id="_i_7" lang="" target="_blank">Jason Dion</a>根據CC-BY許可使用。</span></p>
 <p lang=""></p>
 <br />PCH10 Network Hardware << <a href='PCH10 Network Hardware.html'>Previous</a> <a href='Install a Network Adapter(安裝網路適配器).html'>Next</a> >> Install a Network Adapter(安裝網路適配器)</div>
         
