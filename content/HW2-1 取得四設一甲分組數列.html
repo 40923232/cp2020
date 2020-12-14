@@ -122,7 +122,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='首頁.html'>首頁</a><li class='has-children'><a href='HW1.html'>HW1</a><ul class='dropdown'><li class='has-children'><a href='PCH9 Network Overview.html'>PCH9 Network Overview</a><ul class='dropdown'><li><a href='Network Defined by Relationships(關係定義的網路).html'>Network Defined by Relationships(關係定義的網路)</a><li><a href='Network Defined by Topology(結構定義的網路).html'>Network Defined by Topology(結構定義的網路)</a></li></ul><li class='has-children'><a href='PCH10 Network Hardware.html'>PCH10 Network Hardware</a><ul class='dropdown'><li><a href='Network Devices(網路裝置).html'>Network Devices(網路裝置)</a><li><a href='Install a Network Adapter(安裝網路適配器).html'>Install a Network Adapter(安裝網路適配器)</a></li></li></ul></ul><li class='has-children'><a href='HW2.html'>HW2</a><ul class='dropdown'><li><a href='HW2-1 取得四設一甲分組數列.html'>HW2-1 取得四設一甲分組數列</a><li><a href='HW2-2 查看加退選.html'>HW2-2 查看加退選</a><li><a href='HW2-3 取得W3網頁html.html'>HW2-3 取得W3網頁html</a></li></ul><li class='has-children'><a href='HW3.html'>HW3</a><ul class='dropdown'><li><a href='22. Read On File.html'>22. Read On File</a><li><a href='23. File Overlap.html'>23. File Overlap</a><li><a href='29. Tic Tac Toe Game.html'>29. Tic Tac Toe Game</a></li>
+                     <li><a href='首頁.html'>首頁</a><li class='has-children'><a href='HW1.html'>HW1</a><ul class='dropdown'><li class='has-children'><a href='PCH9 Network Overview(網路總覽).html'>PCH9 Network Overview(網路總覽)</a><ul class='dropdown'><li><a href='Network Defined by Relationships(關係定義的網路).html'>Network Defined by Relationships(關係定義的網路)</a><li><a href='Network Defined by Topology(結構定義的網路).html'>Network Defined by Topology(結構定義的網路)</a></li></ul><li class='has-children'><a href='PCH10 Network Hardware(網路硬體).html'>PCH10 Network Hardware(網路硬體)</a><ul class='dropdown'><li><a href='Network Devices(網路裝置).html'>Network Devices(網路裝置)</a><li><a href='Install a Network Adapter(安裝網路適配器).html'>Install a Network Adapter(安裝網路適配器)</a></li></li></ul></ul><li class='has-children'><a href='HW2.html'>HW2</a><ul class='dropdown'><li><a href='HW2-1 取得四設一甲分組數列.html'>HW2-1 取得四設一甲分組數列</a><li><a href='HW2-2 查看加退選.html'>HW2-2 查看加退選</a><li><a href='HW2-3 取得W3網頁html.html'>HW2-3 取得W3網頁html</a></li></ul><li class='has-children'><a href='HW3.html'>HW3</a><ul class='dropdown'><li><a href='22. Read On File.html'>22. Read On File</a><li><a href='23. File Overlap.html'>23. File Overlap</a><li><a href='29. Tic Tac Toe Game.html'>29. Tic Tac Toe Game</a></li>
                       </ul>
                 </nav>
               </div>
@@ -134,6 +134,20 @@ img.add_border {
           
         </header>
     <div id="tipue_search_content">HW2 << <a href='HW2.html'>Previous</a> <a href='HW2-2 查看加退選.html'>Next</a> >> HW2-2 查看加退選<br /><h1>HW2-1 取得四設一甲分組數列</h1>
+<pre><span class="kn">Kaggle Notebook: https://www.kaggle.com/a40923232/cp2020hw2-1<br/><br/></span></pre>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">import urllib.request
+url = "https://nfulist.herokuapp.com/?semester=1091&amp;courseno=0776"
+cp1b = []
+for line in urllib.request.urlopen(url):
+    cp1b.append(int(line.decode('utf-8').rstrip()))
+print(cp1b)
+print("共" + str(len(cp1b)) + "筆")
+#print("https://github.com/" + str(cp1b) + "/cp2020" /n)
+def site(num):
+    print("https://github.com/" + str(num) + "/cp2020")
+for num in cp1b:
+    site(num)</pre>
+<pre><span class="kn"><br/><br/></span></pre>
 <br />HW2 << <a href='HW2.html'>Previous</a> <a href='HW2-2 查看加退選.html'>Next</a> >> HW2-2 查看加退選</div>
         
     <!-- footer -->

@@ -3,7 +3,7 @@
 <p><strong></strong>Github: <a href="https://github.com/40923232/cp2020/commits/master">https://github.com/40923232/cp2020/commits/master </a></p>
 <p><img alt="" height="648" src="/images/未命名.png" width="996"/></p>
 <h1>HW1</h1>
-<h2>PCH9 Network Overview</h2>
+<h2>PCH9 Network Overview(網路總覽)</h2>
 <p>Network Defined by Geography(地理定義的網路)</p>
 <p></p>
 <p><span style="color: #00ccff;"><em><strong>Overview</strong></em></span></p>
@@ -160,7 +160,7 @@
 <p><span>Diagram of multiple classifications of network topologies. Public domain image obtained from <a href="https://commons.wikimedia.org/wiki/File:NetworkTopologies.png" id="_i_11" lang="" target="_blank">Maksim</a><span>.</span></span></p>
 <p><span>網絡拓撲的多種分類圖。從<a href="https://commons.wikimedia.org/wiki/File:NetworkTopologies.png" id="_i_11" lang="" target="_blank">Maksim</a>獲得的公共領域圖像。</span></p>
 <p><span></span></p>
-<h2>PCH10 Network Hardware</h2>
+<h2>PCH10 Network Hardware(網路硬體)</h2>
 <h3>Network Devices(網路裝置)</h3>
 <p></p>
 <p><em><strong><span style="color: #00ccff;">Overview</span></strong></em></p>
@@ -318,10 +318,22 @@
 <p>超文件: <a href="https://www.w3schools.com/html/">https://www.w3schools.com/html/</a> </p>
 <p>bs4: <a href="https://readthedocs.org/projects/beautiful-soup-4/downloads/pdf/latest/">https://readthedocs.org/projects/beautiful-soup-4/downloads/pdf/latest/</a> </p>
 <p>解題參考:<span> </span><a href="https://www.kaggle.com/mdecourse/cp2020-hw2">https://www.kaggle.com/mdecourse/cp2020-hw2</a> </p>
-<h2><span>HW2-1</span></h2>
-<h2><span>HW2-2</span></h2>
+<h2><span>HW2-1 取得四設一甲分組數列</span></h2>
+<pre><span class="kn">Kaggle Notebook: https://www.kaggle.com/a40923232/cp2020hw2-1<br/><br/>import</span> <span class="nn">urllib.request</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s2">"https://nfulist.herokuapp.com/?semester=1091&amp;courseno=0776"</span>
+<span class="n">cp1b</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
+    <span class="n">cp1b</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">'utf-8'</span><span class="p">)</span><span class="o">.</span><span class="n">rstrip</span><span class="p">()))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">cp1b</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"共"</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">cp1b</span><span class="p">))</span> <span class="o">+</span> <span class="s2">"筆"</span><span class="p">)</span>
+<span class="c1">#print("https://github.com/" + str(cp1b) + "/cp2020" /n)</span>
+<span class="k">def</span> <span class="nf">site</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"https://github.com/"</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">num</span><span class="p">)</span> <span class="o">+</span> <span class="s2">"/cp2020"</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">cp1b</span><span class="p">:</span>
+    <span class="n">site</span><span class="p">(</span><span class="n">num</span><span class="p">)</span></pre>
+<h2><span>HW2-2 查看加退選</span></h2>
 <p><em>Work In Progress</em></p>
-<h2><span>HW2-3</span></h2>
+<h2><span>HW2-3 取得W3網頁html</span></h2>
 <p><i>Worl in progress</i></p>
 <h1>HW3</h1>
 <h2>22. Read On File</h2>
