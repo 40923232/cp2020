@@ -134,8 +134,21 @@ img.add_border {
           
         </header>
     <div id="tipue_search_content">HW2-2 查看加退選 << <a href='HW2-2 查看加退選.html'>Previous</a> <a href='HW3.html'>Next</a> >> HW3<br /><h1>HW2-3 取得W3網頁html</h1>
-<p><i>Worl in progress</i></p>
-<br />HW2-2 查看加退選 << <a href='HW2-2 查看加退選.html'>Previous</a> <a href='HW3.html'>Next</a> >> HW3</div>
+<p>接續2-1</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import urllib.request
+url = "https://nfulist.herokuapp.com/?semester=1091&amp;courseno=0776"
+cp1a = []
+for line in urllib.request.urlopen(url):
+cp1a.append(int(line.decode('utf-8').rstrip()))
+print(cp1a)
+print("共" + str(len(cp1a)) + "筆")
+def site(num):
+print("https://github.com/" + str(num) + "/cp2020")
+for num in cp1a:
+site(num)</pre>
+<p><br/><br/></p>
+<p>取得其結果</p>
+<p><img alt="" height="945" src="./../images/hw2-3.PNG" width="1903"/></p><br />HW2-2 查看加退選 << <a href='HW2-2 查看加退選.html'>Previous</a> <a href='HW3.html'>Next</a> >> HW3</div>
         
     <!-- footer -->
       <div class="container">
