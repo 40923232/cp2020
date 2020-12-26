@@ -153,10 +153,22 @@ img.add_border {
 <li>打開檔案</li>
 <li>讀取</li>
 </ol>
-<p>凱起檔案來讀取與開啟檔案來寫一樣，只是使用了不同的標記:</p>
-<p></p>
-<p></p>
-<p></p><br />HW3 << <a href='HW3.html'>Previous</a> <a href='23. File Overlap.html'>Next</a> >> 23. File Overlap</div>
+<p>開起檔案來讀取與開啟檔案來寫一樣，只是使用了不同的標記:</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">  with open('file_to_read.txt', 'r') as open_file:
+    all_text = open_file.read()
+</pre>
+<pre><br/><br/></pre>
+<p>注意此處的"r"代表"read"，上述程式碼案例將整個<span>open_file一次讀取到all</span><span>_text變量中。但是，這代表我們現在在all_text中有一段很長的數列， 而我們可用所需的數列在Python中對其進行操作。</span></p>
+<p><span></span></p>
+<p><span>另一個從檔案中讀取資料的方法是逐行讀取(line by line):</span></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">  with open('file_to_read.txt', 'r') as open_file:
+  	line = open_file.readline()
+  	while line:
+    	print(line)
+    	line = open_file.readline()</pre>
+<pre><br/><br/></pre>
+<p>除了<span>print(line)，你可以想像對文本進行任何操作...如果你將它儲存成變數，然後你就有一個數列可以用 <code class="highlighter-rouge">.strip()</code><span><span>或是<code class="highlighter-rouge">.split()之類的東西。</code></span></span></span></p>
+<pre></pre><br />HW3 << <a href='HW3.html'>Previous</a> <a href='23. File Overlap.html'>Next</a> >> 23. File Overlap</div>
         
     <!-- footer -->
       <div class="container">
