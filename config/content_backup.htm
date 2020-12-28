@@ -356,8 +356,6 @@ site(num)</pre>
 <h1>HW3</h1>
 <h2>22. Read From File(讀取檔案)</h2>
 <p>練習22</p>
-<p></p>
-<p></p>
 <p><strong>討論</strong></p>
 <p>主題:</p>
 <ol>
@@ -367,8 +365,7 @@ site(num)</pre>
 <p></p>
 <p><strong>讀取檔案</strong></p>
 <p></p>
-<p></p>
-<p>讀取檔案與撰寫檔案十分類似，如同在<em>練習21</em>提到。但是，Python 3.3文檔總是最好的來源。</p>
+<p>讀取檔案與撰寫檔案十分類似，如同在<em>練習21</em>(<em><a href="https://www.practicepython.org/exercise/2014/11/30/21-write-to-a-file.html">I discussed before in Exercise 21</a>)</em>提到。但是，<em>Python 3.3文檔</em>(<span> </span><a href="https://docs.python.org/3.3/tutorial/inputoutput.html#reading-and-writing-files">official Python 3.3 documentation</a>)總是最好的來源。</p>
 <p>簡而言之，讀取檔案需要兩個步驟:</p>
 <ol>
 <li>打開檔案</li>
@@ -387,7 +384,42 @@ site(num)</pre>
   	while line:
     	print(line)
     	line = open_file.readline()</pre>
-<pre><br/>除了<span>print(line)，你可以想像對文本進行任何操作...如果你將它儲存成變數，然後你就有一個數列可以用</span><br/><br/></pre>
+<pre><br/><br/></pre>
+<p>除了<span>print(line)，你可以想像對文本進行任何操作...如果你將它儲存成變數，然後你就有一個數列可以用 <code class="highlighter-rouge">.strip()</code><span><span>或是<code class="highlighter-rouge">.split()之類的東西。</code></span></span></span></p>
+<p><span><span><span><code class="highlighter-rouge"></code></span></span></span></p>
+<p><strong><code class="highlighter-rouge">辭典</code></strong></p>
+<p><strong><code class="highlighter-rouge"></code></strong></p>
+<p><code class="highlighter-rouge">辭典是Python關聯兩項資料的方式，</code><em><code class="highlighter-rouge">官方文件</code></em><code class="highlighter-rouge">(<a href="https://docs.python.org/3.3/tutorial/datastructures.html#dictionaries">official documentation</a>)表示了一切。</code></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"> student_scores = {'Adama': 100, 'Starbuck': 75, 'Apollo': 80, 'Athena': 85, 'Agathon': 90}
+</pre>
+<p><code class="highlighter-rouge"></code></p>
+<p><code class="highlighter-rouge"></code>數列(或是任何在:符號左邊的東西)，被稱為<span>keys，當我想要激活values(在:符號右邊的東西)，我需要要求辭典使用key來激活values:</span></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"> adama_score = student_scores['Adama']</pre>
+<pre><br/><br/></pre>
+<p><span></span></p>
+<p><span></span>你可以回到辭典以修改並儲存分數:</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">  adama_score = student_scores['Adama']
+  adama_score += 100	% adama_score is now 200. This doesn't change the dictionary value
+  student_scores['Adama'] = adama_score		% the score in the dictionary is now updated</pre>
+<pre><br/><br/></pre>
+<p>我不能要求辭典使用key來關聯value，但我可以獲得一個包含所有keys的列表，也可以獲得一份包含所有values的列表:</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">  all_scores = student_scores.keys()
+  all_names = student_scores.values()</pre>
+<pre><br/><br/></pre>
+<p>我可以使用in關鍵字(就像列表一樣)，像列表推算式一樣做辭典推算式(這些蠻酷的，你可以去<em>官方bit</em>(<a href="https://docs.python.org/3.3/tutorial/datastructures.html#dictionaries">official bit about these</a>)看看)，然後在辭典中重複這些元素(句法只有一點點不同)。</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">  for pair in student_scores.items():
+  	print(pair)</pre>
+<pre><br/><br/></pre>
+<p>然後會打印出<span>(Adama, 100)之類的keys和values。</span></p>
+<p><span>因為辭典沒有順序，迴圈它們不能保證它們以特定的方法出現，所以要小心。</span></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p><code class="highlighter-rouge"></code></p>
+<pre></pre>
 <pre></pre><h2>23. File Overlap</h2>
 <p>Work in progress</p><h2>29. Tic Tac Toe Game</h2>
 <p>Work in progress</p>
